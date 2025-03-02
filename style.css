@@ -1,0 +1,77 @@
+:root{
+    --accent-color: #FED136;
+    --white: #fff;
+    --black: #000;
+    --grey: #777;
+    --input-color:#bbb;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.35px;
+    color: var(--grey);
+    background-color: var(--white);
+}
+.header{
+}
+.logo{
+    color: var(--accent-color);
+    font-family: "Bilbo Swash Caps", sans-serif;
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 1.3px;
+}
+.navigation{
+}
+.navigation-list{
+}
+.navigation-link{
+    color: var(--accent-color);
+    font-size: 14px;
+    line-height: 2.92;
+}
+.section-title{
+    font-size: 40px;
+    line-height: 1.87;
+    letter-spacing: -1px;
+    text-align: center;
+    color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+.service-item{
+    text-align: center;
+}
+.service p{
+    font-family: "Roboto Slab";
+}
+.service-item-title{
+    color: var(--black);
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: -0.45px;
+}
+/*contact*/
+.contact{
+    background-color: var(--black);
+}
+.contact input,
+.contact textarea{
+    color: var(--input-color);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.contact-btn{
+    color: var(--white);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+}
