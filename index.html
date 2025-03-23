@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="container header">
       <a href="" class="logo">Golden</a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -27,9 +27,9 @@
     </header>
 
     <main>
-      <section class="service">
+      <section class="container service">
         <h2 class="section-title">Services</h2>
-        <ul>
+        <ul class="service-list">
           <li class="service-item">
             <img src="" alt="" />
             <h3 class="service-item-title">E-Commerce</h3>
@@ -60,14 +60,20 @@
         </ul>
       </section>
       <section class="contact">
+        <div class="container">
         <h2 class="section-title white">Contact us</h2>
-        <form>
-          <input type="text" placeholder="your Name *" />
-          <input type="email" placeholder="your e-mail *" />
-          <input type="text" placeholder="subject" />
-          <textarea placeholder="Your message *"></textarea>
+        <form class="form">
+          <div class="form-wrap">
+          <div class="inputs-wrap">
+          <input type="text" placeholder="your Name *" class="form-input" />
+          <input type="email" placeholder="your e-mail *" class="form-input" />
+          <input type="text" placeholder="subject" class="form-input" />
+          </div>
+          <textarea placeholder="Your message *" class="form-area"></textarea>
+          </div>
           <button type="submit" class="contact-btn">Send Message</button>
         </form>
+      </div>
       </section>
     </main>
   </body>
