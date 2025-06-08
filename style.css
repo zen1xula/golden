@@ -54,10 +54,8 @@ body {
   line-height: 1.13;
   letter-spacing: 1.3px;
 }
-.navigation {
-}
 .navigation-list {
-  gap: 65px; /*відступ між дітьми*/
+  gap: 65px;
   display: flex;
 }
 .navigation-link {
@@ -89,28 +87,14 @@ body {
 .service-item {
   text-align: center;
 }
-.service-item::before {
-  content: "";
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 3px solid var(--accent-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 20px;
-}
-.service-item:nth-child(1)::before {
-  background-image: url(./images/3.png);
-}
-.service-item:nth-child(2)::before {
-  background-image: url(./images/2.png);
-}
-.service-item:nth-child(3)::before {
-  background-image: url(./images/1.png);
-}
+
 .service p {
   font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: bottom;
+  color: #777777;
 }
 .service-item-title {
   color: #222222;
@@ -119,7 +103,21 @@ body {
   letter-spacing: -0.45px;
   margin-bottom: 10px;
 }
-/*contact*/
+.service-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 69px;
+  border-radius: 50px;
+  border: 3px solid var(--accent-color);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.service-icon {
+  fill: #fed136;
+  height: 37px;
+}
 .contact {
   background-color: var(--black);
   padding-top: 92px;
