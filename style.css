@@ -140,8 +140,8 @@ body {
   height: 68px;
   width: 242px;
   border-radius: 5px;
-  border: none;
   margin: auto;
+  border: none;
   margin-top: 27px;
 }
 .btn {
@@ -192,4 +192,73 @@ body {
   border-radius: 5px;
   border: none;
   color: #bbbbbb;
+}
+.btn-open {
+  position: relative;
+  color: var(--white);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  display: block;
+  height: 68px;
+  width: 242px;
+  border-radius: 5px;
+  border: none;
+  top: 95px;
+  right: 0;
+  margin-top: 27px;
+}
+.modal-close {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: rgb(105, 105, 105);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.322);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.is-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.form-modal {
+  padding: 18px 20px;
+  width: 450px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.35px;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  color: #bbbbbb;
+}
+.checkbox:checked::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(./images/photo_2025-06-22_13-16-40.jpg);
+  background-position: center;
+  background-size: cover;
 }

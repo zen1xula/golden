@@ -26,6 +26,35 @@
       </nav>
     </header>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>x</button>
+        <form class="form-modal" action="">
+          <input
+            type="password"
+            required
+            placeholder="your password *"
+            class="form-modal"
+            minlength="8"
+          />
+          <textarea
+            required
+            placeholder="Your message *"
+            class="form-modal"
+          ></textarea>
+          <label for="">age <input type="number" min="18" max="100" /></label>
+          <label for=""
+            >telephone
+            <input
+              type="tel"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              placeholder="+38 (011) 111-11-11" /></label
+          ><input type="checkbox" class="checkbox" />
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+
     <main>
       <section class="container service">
         <h2 class="section-title">Services</h2>
@@ -94,10 +123,14 @@
                 class="form-area"
               ></textarea>
             </div>
+            <button class="btn-open" type="button" data-modal-open>
+              Feedback
+            </button>
             <button type="submit" class="contact-btn">Send Message</button>
           </form>
         </div>
       </section>
     </main>
+    <script src="./modal.js"></script>
   </body>
 </html>
